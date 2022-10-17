@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 后代选择器：
+        找到div的儿子p设置字体文字是红色
+        父选择器 后代选择器{}
+    */
+
+    
+    /* div p{
+        color: aqua;
+    } */
+    /* 子代选择器：
+        语法：选择器1>选择器2{css}
+        结果：在选择器1所找到标签的子代中，找到满足选择器2的标签，设置样式
+         
+    */
+    /* div>p>a{
+        color:red;
+    } */
+
+    /* 并集选择器：
+        选择器1，选择器2，选择器3{}
+    */
+    /* p,div,span,h1{
+        color: red;
+    } */
+    /* 交集选择器：
+    紧挨着，选中页面中，同时满足多个选择器的标签。
+    语法：选择器1选择器2{css} */
+    /* 
+    hover伪类选择器
+    作用：选中鼠标悬停在元素上的状态
+    语法：选择器：hover{css}
+    */ 
+    a：hover{
+        color: red;
+        background-color: rgb(0, 0, 12);
+    }
+</style>
+<body>
+        <!-- <p>这是一个p标签</p>
+        <div>
+            <p>这是div的儿子p</p>
+        </div>     -->
+        <!-- <div>
+            父级
+            <a href="#">这是div里面的a</a>
+            <p>
+                <a href="#">这是div里面p的a</a>
+            </p>
+        </div> -->
+        <!-- <p>啪啪啪</p>
+        <div>div</div>
+        <span>都纷纷为</span>
+        <h1>hhjjjhj</h1> -->
+        <a href="#">这是一个超链接</a>
+</body>
+</html>

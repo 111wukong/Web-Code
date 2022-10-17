@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: blue;
+            color: red;
+            font-size: 30px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 继承性：子元素继承父元素的特点
+                注意：超链接不能继承
+                h系列标签的font-size会继承失效。
+                可以继承的常见属性（文字控制属性都能继承,反之则不能）：
+                color
+                font-style font-weight  font-size  font-family
+                text-indent  text-align
+                line-height
+             -->
+
+    <!-- 层叠性：1.给一个标签设置不同的样式->此时样式会层层叠加->会共同作用在标签上
+                2。给同一个标签设置相同的样式->此时样式会层层覆盖->最终写在最后的样式会生效
+                注意点：当样式冲突时，只有当选择器优先级相同时，才能通过层叠性判断
+            -->
+             <div>
+                这是div里面的文字
+                <span>这是div里面的span</span>
+             </div>
+</body>
+</html>

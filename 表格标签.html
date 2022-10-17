@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table表示表格整体
+         tr表示表格每行，用于包裹td
+         td表示单元格，用于包裹内容 -->
+    <!--border边框宽度
+        width表格宽度
+        height表格高度  -->
+            <table border="9" width="600" height="300">
+                    <caption>学生成绩单</caption>
+                <tr>
+                    <th>姓名</th>
+                    <th>成绩</th>
+                    <th>评语</th>
+                </tr>
+                <tr> 
+                <td>张飞</td>
+                <td rowspan="2">100</td>
+                <td>粗中有细</td>
+            </tr>
+            <tr>
+                <td>赵云</td>
+                <!-- <td>135</td> -->
+                <td>长坂坡，七进七出</td>
+            </tr>
+            <tr>
+                <td>吕布</td>
+                <!-- <td>145</td> -->
+                <td colspan="2">人中吕布，马中赤兔</td>
+            </tr>
+        </table>
+        <!-- caption 表格大标题，表示表格整体大标题，默认在表格整体顶部居中位置显示，写在table标签内
+             th表头单元格，表示一列小标题，通常用于表格第一行，默认内部文字加粗并居中显示，写在tr标签内（用于替换td标签） -->
+             <!-- 合并单元格：
+            rowspan：合并单元格的个数，跨行合并
+            colspan=“合并单元格的个数，跨列合并 -->
+    
+</body>
+</html>

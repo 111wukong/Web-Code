@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 文本域标签的常见属性：
+    cols：规定了文本域的可见宽度
+    rows：规定了文本域可见行数 --> 
+    <textarea  cols="30" rows="10">我们是社会主义接班人</textarea>
+    <!-- 
+        场景：常用于绑定内容与表单标签的关系
+        使用方法1:使用label把内容包起来.
+                 在表单标签上添加ID属性
+                 在label标签的for属性中设置对应的id属性值
+        
+        使用方法2：
+                直接使用label标签把内容和表单标签一起包裹起来
+                需要把label标签的for属性删除即可
+     -->
+    性别：<input type="radio" name="sex" id="nan"><label for="nan">男</label>
+        <label ><input type="radio" name="sex">女</label>
+</body>
+</html>

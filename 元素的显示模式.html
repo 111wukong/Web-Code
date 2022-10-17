@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(153, 31, 31);
+        }
+        span{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(156, 59, 59);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+        <!-- HTML嵌套规范注意点：
+            块级元素，一般作为大容器，可以嵌套：文本，块级元素，行内元素，行内快元素等等
+            但是：p标签中不要嵌套div/p/h等块级元素
+        
+            a标签内部可以嵌套任意元素
+            但是：a标签不能嵌套a标签-->
+
+
+    <!-- 块级元素：
+            显示特点：
+        1.独占一行
+        2.宽度默认是父元素的宽度，高度默认由内容撑开
+        3.可以设置宽高
+            代表标签：
+        div/p/h系列。ul.li,dl,dt,dd,form,nav,footer..... -->
+    <div>wwwww</div>
+
+    <!-- 行内元素；
+            显示特点：
+        1.一行可以显示多个
+        2.宽度和高度默认由内容撑开
+        3.不可以设置宽度
+            代表标签：
+        a/span/b/u/i/s/strong/ins/em/del-->
+
+        <!-- 行内块元素：
+                显示特点：
+            1，一行可以显示多个
+            2.可以设置宽高
+                代表标签：
+            input/textarea/button/select
+            特殊情况：img标签有行内块元素特点，但是Chrome调试工具显示结果是inline -->
+
+            <!-- 元素的而显示模式；
+                    目的：改变元素默认的显示特点，让元素符合布局要求
+                    语法：
+                display:block  转换成块级元素
+                display：inline-block  转换成行内块元素
+                display；inline  转换成行内元素 -->
+
+        <span>soan</span>
+        <span>gijkhkj</span>
+</body>
+</html>
